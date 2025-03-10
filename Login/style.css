@@ -1,0 +1,114 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box
+{
+    padding: 40px 50px;
+    width: 500px; /* Increased width */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.box .form
+{
+    padding: 10px 20px;
+}
+.box .form h2
+{
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.box .form form
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box .form form .inputbox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.box .form form .inputbox input
+{
+    width: 100%;
+    padding: 15px 20px;
+    padding-left: 50px; /* Add padding for icon */
+    border: 2px solid #A0522D; /* Brown border */
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+.box .form form .inputbox input:focus
+{
+    border-color: #8B4513; /* Darker brown border on focus */
+}
+.box .form form .inputbox span
+{
+    position: absolute;
+    left: 50px; /* Adjusted to match input padding */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #A0522D; /* Brown color */
+    pointer-events: none;
+    transition: 0.5s;
+}
+.box .form form .inputbox input:focus ~ span,
+.box .form form .inputbox input:valid ~ span
+{
+    top: -10px;
+    left: 45px; /* Adjusted to match input padding */
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0 5px;
+    color: #8B4513; /* Darker brown color */
+}
+.box .form form .inputbox .icon
+{
+    position: absolute;
+    left: 15px; /* Adjusted for more space */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #A0522D; /* Brown color */
+}
+.box .form form .sub
+{
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #A0522D; /* Brown color */
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.box .form form .sub:hover
+{
+    background: #8B4513; /* Darker brown color */
+}
