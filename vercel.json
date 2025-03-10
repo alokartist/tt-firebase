@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "index.html", "use": "@vercel/static" },
+      { "src": "aim-index.html", "use": "@vercel/static" },
+      { "src": "ask-index.html", "use": "@vercel/static" },
+      { "src": "analysis-index.html", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/aim", "dest": "/aim-index.html" },
+      { "src": "/ask", "dest": "/ask-index.html" },
+      { "src": "/login", "dest": "/index.html" },
+      { "src": "/startpage", "dest": "/index.html" },
+      { "src": "/analyse", "dest": "/analysis-index.html" }
+    ]
+  }
