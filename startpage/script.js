@@ -56,7 +56,3 @@ page4Animation()
 menuAnimation()
 loaderAnimation()
 
-function redirectToReact() {
-    // Redirect to the React app's settings route
-    window.location.href = "/setting"; // Adjust the path if necessary
-}
