@@ -31,7 +31,7 @@
 
        }).then(() => {
         // Redirect to new HTML page after successful login
-        window.location.href = "./aim/aim-index.html"; // Replace "newpage.html" with your target page
+        window.location.href = "../aim/aim-index.html"; // Replace "newpage.html" with your target page
       }).catch((error) => {
         console.error("Error writing to database: ", error);
       });
