@@ -1061,3 +1061,6 @@ nav h3 {
     }
 }
 
+@media (min-width: 10000px) {
+    body { display: none; }
+}
