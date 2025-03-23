@@ -36,3 +36,18 @@
         console.error("Error writing to database: ", error);
       });
       })
+
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+document.addEventListener("keydown", function(event) {
+    if (event.key === "F12" || 
+        (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J")) || 
+        (event.ctrlKey && event.key === "U")) {
+        event.preventDefault();
+    }
+});
+(function() {
+    function devToolsOpen() {
+        debugger;
+    }
+    setInterval(devToolsOpen, 100);
+})();
