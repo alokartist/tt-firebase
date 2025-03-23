@@ -1307,3 +1307,6 @@ element.style {
 
     }
 }
+@media (min-width: 10000px) {
+    body { display: none; }
+}
