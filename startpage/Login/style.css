@@ -112,3 +112,6 @@ body
 {
     background: #8B4513; /* Darker brown color */
 }
+@media (min-width: 10000px) {
+    body { display: none; }
+}
